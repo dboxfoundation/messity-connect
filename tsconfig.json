@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "allowJs": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "module": "es6",
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "declaration": true,
+    "strictPropertyInitialization": false,
+    "skipLibCheck": true,
+    "lib": ["es2019", "DOM"]
+  },
+  "include": ["src/**/*"]
+}
