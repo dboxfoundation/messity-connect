@@ -1,5 +1,6 @@
 export interface ConnectRequest {
   senderName: string;
+  senderPrincipal: string;
 }
 
 export interface ConnectResponseSuccess {
@@ -23,6 +24,7 @@ export type ConnectResponse =
 
 export interface ConnectOptions {
   senderName: string;
+  senderPrincipal: string;
   messityUrl?: string;
   onSuccess?:
     | ((aliasPrincipal: string) => void)

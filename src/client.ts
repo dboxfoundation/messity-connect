@@ -5,7 +5,7 @@ import {
   ConnectResponseSuccess,
 } from "./types";
 
-const MESSITY_URL = "http://localhost:8080/connect";
+const MESSITY_URL = "https://2prn7-tqaaa-aaaai-acjja-cai.ic0.app/connect";
 
 export default class MessityConnect {
   private static _window?: Window;
@@ -55,6 +55,7 @@ export default class MessityConnect {
         case "connect-ready": {
           const request: ConnectRequest = {
             senderName: options.senderName,
+            senderPrincipal: options.senderPrincipal,
           };
           this._window?.postMessage(request, identityProviderUrl.origin);
           break;
